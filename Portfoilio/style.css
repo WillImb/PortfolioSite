@@ -20,3 +20,10 @@ h1{
     color: blue;
     
 }
+.cover{
+    width: 200px;
+    height: 200px;
+}
+.display{
+    display: flex;
+}
