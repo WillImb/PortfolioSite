@@ -27,6 +27,9 @@ h1{
     color: blue;
     
 }
+h2{
+    font-size: 3em;
+}
 .display{
     
     display: flex;
@@ -39,13 +42,16 @@ h1{
     margin-bottom: 10px;
     margin-left: 5%;
     margin-right: 5%;
-    border: solid 2px black;
+    box-shadow: 5px 5px 5px gray;
     border-radius: 5px;
     text-align: center;
     background-color: lightblue;
     width: 220px;
     height: 350px;
     
+}
+.showcase:hover{
+    box-shadow: 7px 7px 5px gray;
 }
 .cover{
     display: block;
