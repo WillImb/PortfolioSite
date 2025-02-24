@@ -1,0 +1,20 @@
+body{
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+h1{
+   
+}
+#title{
+    height: 40vh;
+    background-color: lightblue;
+    text-align: center;
+}
+#desc{
+    height: 40vh;
+    background-color: lightgrey;
+}
+#process{
+    height: 80vh;
+    background-color: lightgoldenrodyellow;
+}
