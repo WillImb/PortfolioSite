@@ -1,5 +1,5 @@
 body{
-  
+  font-size: 20px;
     
 }
 a:link{
@@ -10,7 +10,21 @@ a:visited{
 }
 
 header{
-    height: 15vh;
+    align-items: center;
+    background-color: lightgoldenrodyellow;
+    height: 40vh;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+#about{
+    width: 30%; 
+    height: 25vh; 
+    overflow: hidden; 
+    background-color: 
+    lightblue; 
+    padding-left: 1vw
 }
 
 
