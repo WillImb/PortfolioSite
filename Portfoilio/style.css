@@ -1,6 +1,10 @@
 body{
+padding-left: 10vw;
+padding-right: 10vw;
+background-color: #2E2E38;
   font-size: 20px;
-    
+  font-family:"Open Sans";
+  font-weight: 500;
 }
 a:link{
     
@@ -23,13 +27,13 @@ header{
     height: 25vh; 
     overflow: hidden; 
     background-color: 
-    lightblue; 
+    #C4AF9A; 
     padding-left: 1vw
 }
 
 
 #center{
-    background-color: pink;
+    background-color: #81AE9D;
     text-align: center;    
 }
 
@@ -52,21 +56,26 @@ h2{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.showcase{
-    margin-top: 10px;
+.divcase{
+    color: black;
+    padding-top: 1px;
     margin-bottom: 10px;
     margin-left: 5%;
     margin-right: 5%;
     box-shadow: 5px 5px 5px gray;
     border-radius: 5px;
     text-align: center;
-    background-color: lightblue;
+    background-color:  #C4AF9A;
     width: 220px;
     height: 350px;
     
 }
-.showcase:hover{
+.divcase:hover{
     box-shadow: 7px 7px 5px gray;
+    
+}
+.showcase:hover{
+    text-decoration: none;
 }
 .cover{
     display: block;
@@ -75,7 +84,7 @@ h2{
     margin-right: auto;
     width: 200px;
     height: 200px;
-    border: solid 2px white;
+    border: solid 2px #81AE9D;
 }
 
 .bottomtext{
@@ -83,10 +92,26 @@ h2{
 }
 #links{
     background-color: lightgoldenrodyellow;
+    
+}
+#linkflex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#linkflex>span{
+    text-align: center;
+    width: 40%;
+    display: inline-block;
 }
 footer{
     height: 20vh;
-    background-color: lightgray;
+    background-color: #FB9F89;
 }
 
+.software>img{
+    border-radius: 2px;
+    
+}
 
