@@ -1,0 +1,32 @@
+body{
+    background-color: #383330; 
+    text-align: center; 
+    padding-top: 45vh;
+    text-wrap: nowrap;
+}
+img{
+    width: 4vw;
+}
+a{
+    border-radius: 10px;
+    color: #383330; 
+    padding: 20px; 
+    background-color: whitesmoke; 
+    font-size: 4vw;
+    font-family: "Open Sans";
+    box-shadow: 5px 5px 5px black;
+}
+a:hover{
+    text-decoration: none;
+    background-color: lightgray;
+    box-shadow: 7px 7px 5px black;
+}
+@media screen and (min-width: 800px)
+{
+    a{
+    font-size: 40px;
+    }
+    img{
+        width:40px;
+    }
+}
