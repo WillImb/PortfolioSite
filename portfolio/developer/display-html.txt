@@ -1,0 +1,15 @@
+    <!-- Temp will add later
+         <div>
+            <a href="display.html" class="showcase">
+                <div class="divcase">
+                <img src="Images/chessreference.jpeg" class="cover">
+                <p class="bottomtext">
+                    Man V Machine
+                    <br>• Spring 2024
+                    <br><span class="software"><img src="Images/Icons/Monogame--Streamline-Simple-Icons.svg" style="width:20px; height:20px;"></span>
+                    <span class="software"><img src="Images/Icons/Logo_C_sharp.svg" style="width:20px; height:20px;"></span>
+                </p>
+            </div>
+            </a>
+        </div> 
+        -->

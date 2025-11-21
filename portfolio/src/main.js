@@ -58,24 +58,13 @@ function UpdateDisplay() {
 }
 
 //Checkboxes
-let cbClicked = (name = "") => {
-    if (name != "") {
-     
-        if (document.querySelector(`#${name}-cb`).checked) {
-            activeTags.push(name);
-        }
-        else {
-            //activeTags.splice(name, 1);
-        }
+
+document.querySelector("#web-cb").onclick = () =>{
+    if(document.querySelector("#web-cb").onclick){
+        
     }
-    console.log(activeTags);
 }
 
- 
-for (let c of document.querySelectorAll(".cb")) {
-    
-    c.addEventListener("click",cbClicked(c.value));
-}
 
 
 init();
