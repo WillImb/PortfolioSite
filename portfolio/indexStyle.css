@@ -85,11 +85,13 @@ header{
 
 h1{
     
-    color: #445946;
+    color: #383330;
     
 }
 h2{
     font-size: 3em;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .display{
    
@@ -141,6 +143,19 @@ details{
     border: solid 1px #81AE9D;
     border-radius: 5px;
     text-align: left;
+}
+#filter{
+    border-top:#383330 solid 1px;
+    justify-self: center;    
+    width: 60%;
+    background-color: #D5BDA1;
+    border-top: solid 1px #383330;
+    border-bottom: solid 1px #383330;
+    margin-bottom: 20px;
+}
+
+#tagsHolder{
+    overflow: scroll;
 }
 
 
