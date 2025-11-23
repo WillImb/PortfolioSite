@@ -14,7 +14,7 @@ let asciiDisplay = new Display.Display(`<div><a href="VideoToAsciiDisplay.html" 
 
 
 
-let activeTags = ["frontPage"];
+let activeTags = [];
 let displays = [];
 function init() {
     displays.push(asciiDisplay);
@@ -28,41 +28,79 @@ function init() {
 }
 
 function UpdateDisplay() {
+   
     let tempDisplays = displays.map((x) => x);
     let containsATag = false;
     for (let i = displays.length - 1; i >= 0; i--) {
 
-        for (let j = 0; j < activeTags.length; j++) {
+        if (activeTags.length > 0) {
+            for (let j = 0; j < activeTags.length; j++) {
 
+                for (let k = 0; k < displays[i].tags.length; k++) {
+                    if (displays[i].tags[k] == activeTags[j]) {
+                        containsATag = true;
+                        break;
+                    }
+
+                }
+
+            }
+            if (!containsATag) {
+                tempDisplays.splice(i, 1);
+            }
+            containsATag = false;
+        }
+        else {
             for (let k = 0; k < displays[i].tags.length; k++) {
-                if (displays[i].tags[k] == activeTags[j]) {
+                if (displays[i].tags[k] == "frontPage") {
                     containsATag = true;
                     break;
                 }
 
             }
-
+            if (!containsATag) {
+                tempDisplays.splice(i, 1);
+            }
+            containsATag = false;
         }
-        if (!containsATag) {
-            tempDisplays.splice(i, 1);
-        }
-        containsATag = false;
 
     }
 
     if (tempDisplays.length > 0) {
+        document.querySelector(".display").innerHTML = "";
         tempDisplays.forEach(element => {
             document.querySelector(".display").innerHTML += element.html;
         });
     }
 }
 
+const ApplyFilter = (id, tagName) => {
+    
+    if (document.querySelector(id).checked) {
+        activeTags.push(tagName);
+        UpdateDisplay();
+    }
+    else{
+        activeTags.splice(activeTags.indexOf(tagName),1);
+        UpdateDisplay();
+
+    }
+}
+
+
 //Checkboxes
 
-document.querySelector("#web-cb").onclick = () =>{
-    if(document.querySelector("#web-cb").onclick){
-        
-    }
+document.querySelector("#web-cb").onclick = () => {
+    ApplyFilter("#web-cb", "web");
+}
+document.querySelector("#unity-cb").onclick = () => {
+    ApplyFilter("#unity-cb", "unity");
+}
+document.querySelector("#game-cb").onclick = () => {
+    ApplyFilter("#game-cb", "game");
+}
+document.querySelector("#program-cb").onclick = () => {
+    ApplyFilter("#program-cb", "program");
 }
 
 

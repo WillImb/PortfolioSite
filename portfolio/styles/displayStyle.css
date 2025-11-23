@@ -16,7 +16,7 @@ body{
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background-image: linear-gradient(to bottom, rgba(56, 51, 48,.4), #383330), url("Images/mainBG.jpg");
+    background-image: linear-gradient(to bottom, rgba(56, 51, 48,.4), #383330), url("/Images/mainBG.jpg");
     background-color: #383330;
     background-position: left top;
     
