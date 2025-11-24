@@ -1,4 +1,7 @@
-game, program, art
+game, application, art
 web, unity, python, javascript, monogame, 
 2023, 2024, 2025
 solo, group
+download, web
+cpp (c++), csharp
+3d, 2d

@@ -1,107 +1,116 @@
-
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
-body{
-    
+
+body {
+
     padding-left: 10vw;
     padding-right: 10vw;
     background-color: #383330;
     font-size: 20px;
-    font-family:"Open Sans";
+    font-family: "Open Sans";
     font-weight: 500;
 }
-#bg{   
+
+#bg {
     left: 0;
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background-image: linear-gradient(to bottom, rgba(56, 51, 48,.4), #383330), url("/Images/mainBG.jpg");
+    background-image: linear-gradient(to bottom, rgba(56, 51, 48, .4), #383330), url("/Images/mainBG.jpg");
     background-color: #383330;
     background-position: left top;
-    
+
     z-index: -1;
 }
 
 
-header{
+header {
     align-items: center;
-    background-image: linear-gradient(to bottom, rgba(68, 89, 70,.9), rgba(68, 89, 70,.9)), url("/Images/cardboard-texture.jpg");
-    
+    background-image: linear-gradient(to bottom, rgba(68, 89, 70, .9), rgba(68, 89, 70, .9)), url("/Images/cardboard-texture.jpg");
+
     height: 80vh;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:center;
-    gap: 10%;
-}
-#headshot{
-    height: auto;  
-    width:50%;
-    border-radius: 20px;
-    border: solid 2px #C78853;
-    
-}
-@media only screen and (min-width: 850px) {
-#headshot{
-    height: auto;  
-    width:30%;
-    border-radius: 20px;
-  
-}
-}
-@media only screen and (max-width: 850px) {
-#about{
-    font-size: 15px;
-    width: 50%; 
-    height: 30vh; 
-    overflow: hidden;     
-}
-}
-#about{
-
-    width: 40vh; 
-    height: 26vh; 
-    overflow: hidden; 
-    background-color: 
-    #D5BDA1; 
-    border: solid 2px #C78853;
-    padding-left: 1vw;
-     border-radius: 2px;
-}
-#about>p{
-    padding-right: 5px;
-   
-}
-
-#center{
-    background-image: linear-gradient(to bottom, rgba(213, 189, 161,.8), rgba(213, 189, 161,.8)), url("/Images/cardboard-texture.jpg");
-    background-color: #D5BDA1;
-    text-align: center;   
-     
-}
-
-
-
-h1{
-    
-    color: #383330;
-    
-}
-h2{
-    font-size: 3em;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.display{
-   
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10%;
 }
-.divcase{
+
+#headshot {
+    height: auto;
+    width: 50%;
+    border-radius: 20px;
+    border: solid 2px #C78853;
+
+}
+
+@media only screen and (min-width: 850px) {
+    #headshot {
+        height: auto;
+        width: 30%;
+        border-radius: 20px;
+
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #about {
+        font-size: 15px;
+        width: 50%;
+        height: 30vh;
+        overflow: hidden;
+    }
+}
+
+#about {
+
+    width: 40vh;
+    height: 26vh;
+    overflow: hidden;
+    background-color:
+        #D5BDA1;
+    border: solid 2px #C78853;
+    padding-left: 1vw;
+    border-radius: 2px;
+}
+
+#about>p {
+    padding-right: 5px;
+
+}
+
+#center {
+    background-image: linear-gradient(to bottom, rgba(213, 189, 161, .8), rgba(213, 189, 161, .8)), url("/Images/cardboard-texture.jpg");
+    background-color: #D5BDA1;
+    text-align: center;
+
+}
+
+
+
+h1 {
+
+    color: #383330;
+
+}
+
+h2 {
+    font-size: 3em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.display {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+}
+
+.divcase {
     border: solid 1px #445946;
     color: black;
     padding-top: 1px;
@@ -111,19 +120,22 @@ h2{
     box-shadow: 5px 5px 5px gray;
     border-radius: 5px;
     text-align: center;
-    background-color:  #C78853;
+    background-color: #C78853;
     width: 220px;
     height: 350px;
-    
+
 }
-.divcase:hover{
+
+.divcase:hover {
     box-shadow: 7px 7px 5px gray;
-    
+
 }
-.showcase:hover{
+
+.showcase:hover {
     text-decoration: none;
 }
-.cover{
+
+.cover {
     display: block;
     margin-top: 10px;
     margin-left: auto;
@@ -132,7 +144,8 @@ h2{
     height: 200px;
     border: solid 2px #81AE9D;
 }
-details{
+
+details {
     font-size: 15px;
     position: relative;
     z-index: 10;
@@ -144,30 +157,60 @@ details{
     border-radius: 5px;
     text-align: left;
 }
-#filter{
-    border-top:#383330 solid 1px;
-    justify-self: center;    
-    width: 60%;
+
+#filter {
+    
+    text-align: left;
+    border-top: #383330 solid 1px;
+    justify-self: center;
+    width: 80%;
     background-color: #D5BDA1;
     border-top: solid 1px #383330;
-    border-bottom: solid 1px #383330;
+    border: solid 1px #383330;
     margin-bottom: 20px;
+    text-wrap-mode: nowrap;
+    overflow: auto;
 }
 
-#tagsHolder{
-    overflow: scroll;
+#filter>span {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-wrap-mode: nowrap;
+}
+
+/*scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #b5a089;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 5px rgb(80, 80, 80);
+    background: #4e655c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #2a3732;
 }
 
 
-#links{
-    background-image: linear-gradient(to bottom, rgba(213, 189, 161,.80), rgba(213, 189, 161,.80)), url("/Images/cardboard-texture.jpg");
+
+
+#links {
+    background-image: linear-gradient(to bottom, rgba(213, 189, 161, .80), rgba(213, 189, 161, .80)), url("/Images/cardboard-texture.jpg");
     background-color: 213, 189, 161, 1;
 
     font-size: 1.3vw;
     padding-bottom: 2%;
 }
 
-.link{
+.link {
     box-shadow: 5px 5px 5px gray;
     border-radius: 10px;
     background-color: #C78853;
@@ -175,86 +218,94 @@ details{
 
 
 
-.link:hover{
+.link:hover {
     box-shadow: 7px 7px 5px gray;
-    
+
 }
 
-.link>a{
+.link>a {
     overflow: visible;
     color: black;
 }
-.link>a:hover{
+
+.link>a:hover {
     text-decoration: none;
     color: #81AE9D;
 }
-#linkflex{
+
+#linkflex {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     padding-left: 10%;
     padding-right: 10%;
-    gap:20%;
+    gap: 20%;
     row-gap: 30px;
 }
+
 @media only screen and (max-width: 850px) {
-#linkflex{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 5%;
-    padding-right: 5%;
-    gap:10%;
-    row-gap: 30px;
+    #linkflex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 5%;
+        padding-right: 5%;
+        gap: 10%;
+        row-gap: 30px;
+    }
 }
-}
-#linkflex>div{
-    
+
+#linkflex>div {
+
     text-align: center;
 
     width: 16%;
     height: 4vh;
     display: inline-block;
 }
+
 @media only screen and (max-width: 850px) {
-    #linkflex>div{
-    
+    #linkflex>div {
+
+        text-align: center;
+        font-size: 2.5em;
+        width: 40%;
+        height: 4vh;
+        display: inline-block;
+    }
+}
+
+footer {
     text-align: center;
-    font-size: 2.5em;
-    width: 40%;
-    height: 4vh;
-    display: inline-block;
-}
-}
-footer{
-    text-align:center;
     color: white;
     background: none;
 }
-footer>div>p>a{
+
+footer>div>p>a {
     color: white;
     text-decoration: underline;
-    
-}
-footer>div>p>a:hover{
-    text-decoration: none;
-    color:#81AE9D;
+
 }
 
-.tooltip{
+footer>div>p>a:hover {
+    text-decoration: none;
+    color: #81AE9D;
+}
+
+.tooltip {
     position: relative;
     display: inline-block;
-    
+
 }
 
-#changelog>a{
+#changelog>a {
     color: white;
     text-decoration: underline;
     font-style: italic;
 }
-#changelog>a:hover{
+
+#changelog>a:hover {
     text-decoration: none;
 }
-
