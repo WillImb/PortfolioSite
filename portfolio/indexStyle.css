@@ -17,7 +17,7 @@ body {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background-image: linear-gradient(to bottom, rgba(56, 51, 48, .4), #383330), url("/Images/mainBG.jpg");
+    background-image: linear-gradient(to bottom, rgba(56, 51, 48, .4), #383330), url("Images/mainBG.jpg");
     background-color: #383330;
     background-position: left top;
 
@@ -27,7 +27,7 @@ body {
 
 header {
     align-items: center;
-    background-image: linear-gradient(to bottom, rgba(68, 89, 70, .9), rgba(68, 89, 70, .9)), url("/Images/cardboard-texture.jpg");
+    background-image: linear-gradient(to bottom, rgba(68, 89, 70, .9), rgba(68, 89, 70, .9)), url("Images/cardboard-texture.jpg");
 
     height: 80vh;
     display: flex;
@@ -81,7 +81,7 @@ header {
 }
 
 #center {
-    background-image: linear-gradient(to bottom, rgba(213, 189, 161, .8), rgba(213, 189, 161, .8)), url("/Images/cardboard-texture.jpg");
+    background-image: linear-gradient(to bottom, rgba(213, 189, 161, .8), rgba(213, 189, 161, .8)), url("Images/cardboard-texture.jpg");
     background-color: #D5BDA1;
     text-align: center;
 
@@ -203,7 +203,7 @@ details {
 
 
 #links {
-    background-image: linear-gradient(to bottom, rgba(213, 189, 161, .80), rgba(213, 189, 161, .80)), url("/Images/cardboard-texture.jpg");
+    background-image: linear-gradient(to bottom, rgba(213, 189, 161, .80), rgba(213, 189, 161, .80)), url("Images/cardboard-texture.jpg");
     background-color: 213, 189, 161, 1;
 
     font-size: 1.3vw;
