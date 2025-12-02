@@ -1,0 +1,8 @@
+Hi, I'm Will.
+I'm passionate about building video games, 3D modeling, programming and broadening my tech expertise.
+My favorite to use is Unity and C#, but I also know, java, C++, javascript, python and more. 
+This site serves to showcase all the awesome projects I've worked on, either solo or in groups. 
+The site itself is a site I've programed all on my own. (I also have a template version, if others want to use, email me.)
+My persoanl favorite is EcoSnap (you should play it). On top of programming part of it, I also modeled, rigged and animated the animals.
+I'm always working on something new. 
+Currently I'm messing around with C++ and OpenGL
