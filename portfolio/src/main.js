@@ -1,4 +1,6 @@
 import * as Display from "./displayClass.js";
+
+
 let minesweeperDisplay = new Display.Display('<div><a href="https://people.rit.edu/wai5503/235/235_Project3/" class="showcase"><div class="divcase"><img src="Images/minesweeperCover.JPG" class="cover"><p class="bottomtext">Minesweeper<br>• Fall 2024<br><span class="software"><img src="Images/Icons/icons8-html.svg" style="width:25px; height:25px;"></span><span class="software"><img src="Images/Icons/icons8-css.svg" style="width:25px; height:25px;"></span><span class="software"><img src="Images/Icons/icons8-javascript.svg" style="width:25px; height:25px;"></span><br><details>Pass the time with Minesweeper on a variety of board Sizes</details></p></div></a></div>',
     ["frontPage", "game", "javascript", "solo", "web"]);
 let circleGameDisplay = new Display.Display('<div><a href="https://youbestbelieve.itch.io/circle-game-2048" class="showcase"><div class="divcase"><img src="Images/Ballgame_Cover.png" class="cover" alt="hi"><p class="bottomtext">2048 Circles<br>• Spring 2024<br><span class="software"><img src="Images/Icons/unity.svg" style="width:20px; height:20px;"></span><span class="software"><img src="Images/Icons/Logo_C_sharp.svg" style="width:20px; height:20px;"></span><br><details>Drop Circles. Combine Numbers. Score!</details></p></div></a></div>',
@@ -82,7 +84,7 @@ function UpdateDisplay() {
         document.querySelector(".display").innerHTML += element.html;
     });
 
-     if (tempDisplays.length == 0) {
+    if (tempDisplays.length == 0) {
         document.querySelector(".display").innerHTML = "<p>Sorry, No Projects Match Those Filters</p";
     }
 
