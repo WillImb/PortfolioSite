@@ -45,28 +45,18 @@ header {
 
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 1000px) {
     #headshot {
         height: auto;
-        width: 30%;
+        width: 22vw;
         border-radius: 20px;
 
     }
 }
-
-@media only screen and (max-width: 850px) {
-    #about {
-        font-size: 15px;
-        width: 50%;
-        height: 30vh;
-        overflow: hidden;
-    }
-}
-
 #about {
 
-    width: 40vh;
-    height: 26vh;
+    width: 60vh;
+    height: 55vh;
     overflow: hidden;
     background-color:
         #D5BDA1;
@@ -74,6 +64,15 @@ header {
     padding-left: 1vw;
     border-radius: 2px;
 }
+
+@media only screen and (max-width: 1000px) {
+    #about {        
+        width: 90%;
+        height: 30vh;
+        overflow: scroll;
+    }
+}
+
 
 #about>p {
     padding-right: 5px;
@@ -157,6 +156,11 @@ details {
     border-radius: 5px;
     text-align: left;
 }
+
+.software {
+    padding: 2px 2px;
+}
+
 
 #filter {
     

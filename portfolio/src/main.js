@@ -13,18 +13,25 @@ let toytakedownDisplay = new Display.Display(`<div><a href="https://youbestbelie
     ["frontPage", "unity", "game", "team", "download", "twodee", "csharp"]);
 let asciiDisplay = new Display.Display(`<div><a href="VideoToAsciiDisplay.html" class="showcase"><div class="divcase"><img src="Images/Ascci_Cover.JPG" class="cover"><p class="bottomtext">Video to ASCII<br>• Summer 2025<br><span class="software"><img src="Images/Icons/python-svgrepo-com.svg" style="width:20px; height:20px;"></span><span class="software"><img src="Images/Icons/qt-svgrepo-com.svg" style="width:20px; height:20px;"></span><br><details>Turns the pixels of each frame of a video into ASCII text, then back into a new video!</details></p></div></a></div>`,
     ["frontPage", "python", "application", "solo", "download"]);
+let volleyDisplay = new Display.Display(`<div><a href="https://youbestbelieve.itch.io/neon-volley" class="showcase"><div class="divcase"><img src="Images/VolleyCover.png" class="cover"><p class="bottomtext">Neon Volley<br>• Fall 2025<br><span class="software"><img src="Images/Icons/unity.svg" style="width:20px; height:20px;"></span><span class="software"><img src="Images/Icons/Logo_C_sharp.svg" style="width:20px; height:20px;"></span><br><details>Toss a ball between two points while avoiding enemies in the center. Made in 2 days for the RIT Game Dev Club's fall Game Jam</details></p></div></a></div>`,
+    ["frontPage","unity", "game", "solo", "web", "twodee", "csharp"]);
+let dreamingDisplay = new Display.Display(`<div><a href="https://thefishtacos.itch.io/quitdreaming" class="showcase"><div class="divcase"><img src="Images/QuitDreaming_Cover.jpg" class="cover"><p class="bottomtext">Quit Dreaming<br>• Fall 2025<br><span class="software"><img src="Images/Icons/unreal-icon.svg" style="width:25px; height:25px;"></span><span class="software"><img src="Images/Icons/cpp.svg" style="width:20px; height:20px;"></span><span class="software"><img src="Images/Icons/group-svgrepo-com.svg" style="width:25px; height:25px;"></span><br><details>Battle enemies in a surreal world in this turn based stretegy game. I coded the combat and camera systems for this group project.</details></p></div></a></div>`,
+    ["frontPage","unreal", "game", "team", "download", "threedee", "cpp"]);
 
 
 
 let activeTags = [];
 let displays = [];
 function init() {
+    displays.push(volleyDisplay);
+    displays.push(dreamingDisplay);
     displays.push(asciiDisplay);
     displays.push(ecoSnapDisplay);
     displays.push(minesweeperDisplay);
     displays.push(worldFlagDisplay);
     displays.push(toytakedownDisplay);
     displays.push(circleGameDisplay);
+    
 
     UpdateDisplay();
 }
@@ -85,10 +92,10 @@ function UpdateDisplay() {
     });
 
     if (tempDisplays.length == 0) {
-        document.querySelector(".display").innerHTML = "<p>Sorry, No Projects Match Those Filters</p";
+        document.querySelector(".display").innerHTML = "<p>No Projects Match Those Filters</p";
     }
 
-    console.log(tempDisplays);
+
 }
 
 const ApplyFilter = (id, tagName) => {
@@ -134,11 +141,11 @@ document.querySelector("#download-cb").onclick = () => {
 document.querySelector("#python-cb").onclick = () => {
     ApplyFilter("#python-cb", "python");
 }
-/*
+
 document.querySelector("#cpp-cb").onclick = () => {
     ApplyFilter("#cpp-cb", "cpp");
 }
-    */
+    
 document.querySelector("#csharp-cb").onclick = () => {
     ApplyFilter("#csharp-cb", "csharp");
 }
@@ -148,7 +155,9 @@ document.querySelector("#twodee-cb").onclick = () => {
 document.querySelector("#threedee-cb").onclick = () => {
     ApplyFilter("#threedee-cb", "threedee");
 }
-
+document.querySelector("#unreal-cb").onclick = () => {
+    ApplyFilter("#unreal-cb", "unreal");
+}
 
 
 init();
