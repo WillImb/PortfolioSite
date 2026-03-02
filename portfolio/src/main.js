@@ -17,12 +17,15 @@ let volleyDisplay = new Display.Display(`<div><a href="https://youbestbelieve.it
     ["frontPage","unity", "game", "solo", "web", "twodee", "csharp"]);
 let dreamingDisplay = new Display.Display(`<div><a href="https://thefishtacos.itch.io/quitdreaming" class="showcase"><div class="divcase"><img src="Images/QuitDreaming_Cover.jpg" class="cover"><p class="bottomtext">Quit Dreaming<br>• Fall 2025<br><span class="software"><img src="Images/Icons/unreal-icon.svg" style="width:25px; height:25px;"></span><span class="software"><img src="Images/Icons/cpp.svg" style="width:20px; height:20px;"></span><span class="software"><img src="Images/Icons/group-svgrepo-com.svg" style="width:25px; height:25px;"></span><br><details>Battle enemies in a surreal world in this turn based stretegy game. I coded the combat and camera systems for this group project.</details></p></div></a></div>`,
     ["frontPage","unreal", "game", "team", "download", "threedee", "cpp"]);
+let literatureDisplay = new Display.Display(`<div><a href="https://imburgia-project-1-e79e3b134286.herokuapp.com/" class="showcase"><div class="divcase"><img src="Images/LiteratureAPI.png" class="cover"><p class="bottomtext">Classic Literature API<br>• Spring 2026<br><span class="software"><img src="Images/Icons/icons8-javascript.svg" style="width:25px; height:25px;"></span><span class="software"><img src="Images/Icons/nodejs-icon.svg" style="width:25px; height:25px;"></span><span class="software"></span><br><details>An API for returning information about a long list of classic literature</details></p></div></a></div>`,
+    ["frontPage","web", "solo", "javascript", "application"]);
 
 
 
 let activeTags = [];
 let displays = [];
 function init() {
+    displays.push(literatureDisplay);
     displays.push(volleyDisplay);
     displays.push(dreamingDisplay);
     displays.push(asciiDisplay);
